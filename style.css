@@ -1,0 +1,222 @@
+*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+.header {
+    /* position: fixed; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    width: 100%;
+    border: 0;
+    margin: 0;
+    background-color: rgba(4, 54, 45, 0.888);
+}
+
+.right-head{
+    display: flex;
+    align-items: center;
+}
+#arrow{
+    height:30px;
+    margin-left: 25px;
+}
+#profile{
+    height:60px;
+    width: 65px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+.text{
+    margin-left: 20px;
+    color: white;
+    font-family: Calibri ;
+}
+
+.left-head{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 40px;
+    gap: 20px;
+}
+
+#videocall{
+    height:55px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+#audiocall{
+    height:55px;
+    width: 60px;
+    border-radius: 50%;
+    margin: 20px;
+
+}
+
+#more-option{
+    height:55px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+/* -----------------main container---------------------------- */
+
+.main-container{
+    height: 1600px;
+    width: 100%;
+    background-image: url(./images/bg-whatsapp.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-color: transparent; */
+}
+
+
+.msg .sender{
+    height:30px;
+    background-color: white;
+    border-radius: 10px;
+    margin:5px 30px;
+    padding: 10px 40px;
+    font-size: 30px;
+    font-weight: bold;
+    float: left;
+    clear: both;
+    
+
+}
+.receiver{
+    height:30px;
+    background-color: rgb(174, 254, 121);
+    border-radius: 10px;
+    margin:5px 30px;
+    padding: 10px 40px;
+    font-size: 30px;
+    font-weight: bold;
+    float: right;
+    clear: both;
+}
+
+
+/* ------------------------------foooterrrrrrrrrrrr-------------- */
+
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    height: 90px;
+    width: 100%;
+    background-image: url(./images/bg-whatsapp.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#smile{
+    height: 70px;
+    width: 3.5%;
+    margin-left: 25px;
+    border-radius: 40px 0px 0px 40px;
+}
+
+#textbar{
+    height: 70px;
+    min-width: 80%;
+    /* padding: 10px 40px; */
+    font-size: 30px;
+    font-weight: bold;
+
+}
+
+#clip{
+    height:70px;
+    width: 3%;
+    background-color: white;
+}
+
+#camera{
+    height: 70px;
+    width: 3%;
+}
+#send{
+    height: 70px;
+    width: 3%;
+    border-radius: 0px 40px 40px 0px;
+    background-color: rgb(243, 255, 252);
+}
+
+#speaker{
+    height: 70px;
+    width: 80px;
+    margin-left: 30px;
+    border-radius: 50%;
+    background-color: rgb(7, 193, 159);
+}
+
+/* -=-==-=-=-=-=-=-=-=-=-=-=-=-=------------Media Query-------=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=--=-=--= */
+
+@media (max-width:760px){
+    .header{
+        height: 60px;
+        width: 100%;
+    }
+
+    .right-head{
+        width: 20px;
+        margin-left: -15px;
+    }
+    #arrow{
+        height: 20px;
+        width: 20px;
+    }
+    #profile{
+        height: 40px;
+        width: 40px;
+        margin-left: 5px;
+    }
+    .text{
+        font-size: 15px;
+    }
+
+    .left-head{
+        width: 10px;
+        margin-right: 15px;
+    }
+
+    #videocall{
+        height: 40px;
+        width: 40px;
+
+    }
+    #audiocall{
+        height: 40px;
+        width: 40px;
+        margin: -5px;
+    }
+    #more-option{
+        height: 40px;
+        width: 40px;
+    }
+
+    .main-container{
+        width: 100%;
+        height: 800px;
+    }
+    .sender{
+
+    }
+
+    .receiver{
+        margin: 2px 10px;
+        padding: 10px 10px;
+        font-size: 25px;
+    }
+
+    .footer{
+        width: 100%;
+    }
+}
